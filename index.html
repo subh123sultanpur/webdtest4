@@ -536,14 +536,14 @@ body {
 }
 .overview-card:hover .job-card-title,
 .overview-card:hover .job-stat {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 .overview-card:hover .job-card-subtitle,
 .overview-card:hover .job-day {
   color: #dedede;
 }
 .overview-card:hover .overview-wrapper .heart {
-  color: #fff;
+  color: rgb(255, 255, 255);
   border-color: #fff;
 }
 .overview-card:hover .overview-wrapper .heart:hover {
@@ -1731,7 +1731,7 @@ const jobBg = document.querySelector(".job-bg");
 jobCards.forEach(jobCard => {
   jobCard.addEventListener("click", () => {
     const number = Math.floor(Math.random() * 10);
-    const url = `https://unsplash.it/640/425?image=${number}`;
+    const url = `https://ritikasingh.it/640/425?image=${number}`;
     jobBg.src = url;
 
     const logo = jobCard.querySelector("svg");
